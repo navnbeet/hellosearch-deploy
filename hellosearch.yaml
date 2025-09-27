@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hellosearch
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hellosearch
+  template:
+    metadata:
+      labels:
+        app: hellosearch
+    spec:
+      containers:
+      - name: hellosearch
+        image: knavneetacr01.azurecr.io/hellosearch:demo
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hellosearch-svc
+spec:
+  type: LoadBalancer
+  selector:
+    app: hellosearch
+  ports:
+  - port: 80
+    targetPort: 8080

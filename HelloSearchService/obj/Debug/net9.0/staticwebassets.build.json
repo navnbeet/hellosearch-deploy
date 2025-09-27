@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "E63K+i+G8oZc936TUqoywCgBo1H48Hmqhwyi70MpnqE=",
+  "Source": "HelloSearchService",
+  "BasePath": "_content/HelloSearchService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
